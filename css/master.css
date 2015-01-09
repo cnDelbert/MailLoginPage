@@ -78,7 +78,7 @@ a:link,a:visited, a:hover, a:active {
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #wrap {
@@ -106,7 +106,7 @@ a:link,a:visited, a:hover, a:active {
     line-height: 36px;
     outline: none;
     font-size: 20px;
-    width: 140px;
+    width: 160px;
     border: 1px solid #c7c7c7;
     background: #f3f3f3;
     border-radius: 2px;

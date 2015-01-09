@@ -16,22 +16,22 @@ Eg. `http://yourdomain/login_page.php?lang=en&sp=163&domain=delbert.me`
 
 Any of the parameter is optional. You may change the default setting by modifying [./inc/config.inc.php](./inc/config.inc.php).
 
-### `lang`
+### Language
 
 `lang` option is obeyed ISO 639-1 Language Codes Values and referred from http://www.w3schools.com/tags/ref_language_codes.asp
-- [x]`en`: en.
-- [x]`zh-Hans`: zh zh_cn zh-hans zh-cn.
-- [x]`zh-Hant`: zh-tw zh-hk zh-hant.
+- [x] `en`: en.
+- [x] `zh-Hans`: zh zh_cn zh-hans zh-cn.
+- [x] `zh-Hant`: zh-tw zh-hk zh-hant.
 
-### `provider`
+### Mail Service Provider
 
-- [ ]万网： ali wanwang(TO DO)
-- [x]腾讯： tencent tengxun qq
-- [x]网易： netease 163 126
-- [ ]Google Apps: google.(Failed to login)
-- [ ]Live Domain: microsoft ms(TO DO)
-- [ ]Mail.ru: mail.ru biz.mail.ru(TO DO)
-- [ ]Zoho Mail: zoho(TO DO)
+- [ ] 万网： ali wanwang(TO DO)
+- [x] 腾讯： tencent tengxun qq (Done)
+- [x] 网易： netease 163 126 (Done)
+- [ ] Google Apps: google.(Failed to login)
+- [ ] Live Domain: microsoft ms(TO DO)
+- [ ] Mail.ru: mail.ru biz.mail.ru(TO DO)
+- [ ] Zoho Mail: zoho(TO DO)
 
 ## Example
 
