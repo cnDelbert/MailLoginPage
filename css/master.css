@@ -11,7 +11,8 @@ body {
 
 a:link,a:visited, a:hover, a:active {
     text-decoration: none;
-    outline: none
+    outline: none;
+    color: #c7c7c7;
 }
 
 .title_bar {
@@ -24,15 +25,25 @@ a:link,a:visited, a:hover, a:active {
 
 .logo {
     display: inline-block;
+    margin-left: 50px;
+    float: left;
 }
 
+.lang{
+    float:right;
+    display: inline;
+    color: #787878;
+    text-decoration: none;
+}
 .header {
     width: 964px;
     margin: 0 auto;
 }
 
 .help {
-    margin-left: 580px;
+    float:right;
+    margin-right: 60px;
+    margin-left: 10px;
     display: inline;
     color: #787878;
     text-decoration: none;
@@ -62,10 +73,12 @@ a:link,a:visited, a:hover, a:active {
     width: 120px;
     border: none;
     color: #fff;
-    font-weight: 400;
     background: rgba(79, 137, 195, 0.7);
     font-size: 20px;
-    margin: 10px 10px 10px 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 #wrap {

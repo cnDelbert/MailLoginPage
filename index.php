@@ -58,13 +58,30 @@
 <body>
     <div class="title_bar">
         <div class="header">
+            <div class="help">
+                <a target="_blank" href="https://github.com/cnDelbert/MailLoginPage"><?php echo $help_info[$lang];?></a>
+            </div>
+            <div class="lang">
+                <?php if($_SERVER['QUERY_STRING'] == ''){?>
+                    <a href="?lang=en"> En </a> |
+                    <a href="?lang=zh-hans"> 简 </a> |
+                    <a href="?lang=zh-hant"> 繁 </a>
+                <?php } else { if(strpos($_SERVER['QUERY_STRING'], 'ang=') == ''){?>
+                    <a href="<?php echo '?'.$_SERVER['QUERY_STRING']; ?>&lang=en"> En </a> |
+                    <a href="<?php echo '?'.$_SERVER['QUERY_STRING']; ?>&lang=zh-hans"> 简 </a> |
+                    <a href="<?php echo '?'.$_SERVER['QUERY_STRING']; ?>&lang=zh-hant"> 繁 </a>
+                <?php }else{
+                    $tmp_start = strpos($_SERVER['QUERY_STRING'], 'ang=') + 4;
+                    $tmp_end   = strpos($_SERVER['QUERY_STRING'], '&', $tmp_start) ? strpos($_SERVER['QUERY_STRING'], '&', $tmp_start) - $tmp_start : strlen($_SERVER['QUERY_STRING']);
+                    ?>
+                    <a href="<?php echo '?'.substr_replace($_SERVER['QUERY_STRING'], 'en', $tmp_start, $tmp_end); ?>"> En </a> |
+                    <a href="<?php echo '?'.substr_replace($_SERVER['QUERY_STRING'], 'zh-hans', $tmp_start, $tmp_end); ?>"> 简 </a> |
+                    <a href="<?php echo '?'.substr_replace($_SERVER['QUERY_STRING'], 'zh-hant', $tmp_start, $tmp_end); ?>"> 繁 </a>
+                <?php }} ?>
+            </div>
             <div class="logo">
                 <img src="<?php if(empty($_GET['logo'])) echo $default_logo; else echo $_GET['logo'];?>"> 
                 <?php echo $page_title[$lang];?>
-
-            </div>
-            <div class="help">
-                <a target="_blank" href="https://github.com/cnDelbert/MailLoginPage"><?php echo $help_info[$lang];?></a>
             </div>
         </div>
     </div>
