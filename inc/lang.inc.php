@@ -19,10 +19,22 @@
     );
 	
 	$submit_btn = array(
-        "en" => "Login",
-        "zh-Hans" => "登录",
-        "zh-Hant" => "登錄"
+        "en" => " Login ",
+        "zh-Hans" => " 登 录 ",
+        "zh-Hant" => " 登 錄 "
 	);
+
+    $reset_btn = array(
+    "en" => " Reset ",
+    "zh-Hans" => " 重 置 ",
+    "zh-Hant" => " 重 填 "
+);
+
+    $help_info = array(
+    "en" => " Help ",
+    "zh-Hans" => " 帮助 ",
+    "zh-Hant" => " 説明 "
+);
 
 	$empty_alert = array(
 		"en" => "Either Username or Password is empty.",

@@ -1,5 +1,115 @@
-*{ margin:0; padding:0}
-body{ font-family:"微软雅黑",Verdana, Geneva, sans-serif; font-size:12px; background:#fff}
-.title_bar{ height:76px; line-height:90px; background:url(../img/top.png) repeat-x; border-bottom:1px solid #e5ecf0; overflow:hidden;}
-a{ outline:none}
-.header{ width:964px; margin:0 auto;}
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "Microsoft YaHei", Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    background: #fff
+}
+
+a:link,a:visited, a:hover, a:active {
+    text-decoration: none;
+    outline: none
+}
+
+.title_bar {
+    height: 76px;
+    line-height: 90px;
+    background: url(../img/top.png) repeat-x;
+    border-bottom: 1px solid #e5ecf0;
+    overflow: hidden;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.header {
+    width: 964px;
+    margin: 0 auto;
+}
+
+.help {
+    margin-left: 580px;
+    display: inline;
+    color: #787878;
+    text-decoration: none;
+}
+
+.help:hover {
+    text-decoration: underline
+}
+
+.footer {
+    width: 960px;
+    margin: auto;
+    padding-right: 30px;
+    padding-top: 10px;
+    color: #c7c7c7;
+    text-align: right;
+}
+
+.footer > a:link,a:visited, a:hover, a:active {
+    color: #c7c7c7;
+    text-decoration: none;
+    outline: none
+}
+
+.btn {
+    height: 38px;
+    width: 120px;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    background: rgba(79, 137, 195, 0.7);
+    font-size: 20px;
+    margin: 10px 10px 10px 40px;
+}
+
+#wrap {
+    width: 964px;
+    height: 460px;
+    margin: 20px auto 0 auto;
+    position: relative
+}
+
+#mainform {
+    right: 60px;
+    top: 110px;
+    left: auto;
+    width: 376px;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4)
+}
+
+#mainform form {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#username {
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    font-size: 20px;
+    width: 140px;
+    border: 1px solid #c7c7c7;
+    background: #f3f3f3;
+    border-radius: 2px;
+    padding: 0 5px;
+    margin: 20px auto 10px 40px;
+}
+
+#password {
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    font-size: 20px;
+    width: 280px;
+    border: 1px solid #c7c7c7;
+    background: #f3f3f3;
+    border-radius: 2px;
+    padding: 0 5px;
+    margin: 20px auto 10px 40px;
+}

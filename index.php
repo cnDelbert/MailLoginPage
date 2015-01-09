@@ -53,22 +53,33 @@
 		<?php }?>
 	}
 	</script>
+    <link rel="stylesheet" href="css/master.css" type="text/css"/>
 </head>
 <body>
     <div class="title_bar">
         <div class="header">
-            <div class="logo"><img src="img/title.png"><?php echo $page_title[$lang];?></div>
+            <div class="logo">
+                <img src="<?php if(empty($_GET['logo'])) echo $default_logo; else echo $_GET['logo'];?>"> 
+                <?php echo $page_title[$lang];?>
+
+            </div>
+            <div class="help">
+                <a target="_blank" href="https://github.com/cnDelbert/MailLoginPage"><?php echo $help_info[$lang];?></a>
+            </div>
         </div>
     </div>
-	<div id="wrap">
+	<div id="wrap" style="background-image: url(<?php if(empty($_GET['bgimg'])) echo $default_bgimg[array_rand($default_bgimg)]; else echo $_GET['bgimg'];?>)">
       <div id="mainform">
 		<form action="<?php echo submit_action($sp);?>" method="POST">
-			<input type="text" id="username" name="<?php echo $username[$sp];?>">@<?php echo $alias;?>
+            <label for="username"><input type="text" id="username" name="<?php echo $username[$sp];?>"> @ <?php echo $alias;?></label>
 			<input type="password" id="password" name="<?php echo $password[$sp];?>">
 			<?php echo addition_code($sp);?>
-			<input type="submit" onClick="submit_check();" value="<?php echo $submit_btn[$lang];?>">
+			<input class="btn" type="submit" onClick="submit_check();" value="<?php echo $submit_btn[$lang];?>"> <input
+                type="reset" class="btn" value="<?php echo $reset_btn[$lang];?>"/>
 		</form>
 	  </div>
     </div>
+
+    <div class="footer">&copy 2015<?php if(date('Y')>2015) echo date('-Y');?> by <a href="//delbert.me">Delbert</a></div>
 </body>
 </html>
