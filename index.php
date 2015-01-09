@@ -28,21 +28,21 @@
     <title><?php echo $page_title[$lang];?></title>
 	<script>
 	function submit_check(){
-		usernm = document.getElementById('username');
-		passwd = document.getElementById('password');
+		var usernm = document.getElementById('username');
+		var passwd = document.getElementById('password');
 		if(usernm.value=='' || passwd.value==''){
 			alert("<?php echo $empty_alert[$lang];?>");
 			return;
 		}
-		
+
 		<?php /* if($sp=='g'){?>
 			galx = document.getElementById('galx');
 			galx.value = "<?php echo $galx;?>";
 			console.log(galx.value);
 		<?php }*/?>
-		
+
 		<?php if($sp=='n'){?>
-			n_acc = document.getElementById('n_acc');
+			var n_acc = document.getElementById('n_acc');
 			n_acc.value = usernm.value;
 		<?php }?>
 
@@ -55,6 +55,11 @@
 	</script>
 </head>
 <body>
+    <div class="title_bar">
+        <div class="header">
+            <div class="logo"><img src="img/title.png"><?php echo $page_title[$lang];?></div>
+        </div>
+    </div>
 	<div id="wrap">
       <div id="mainform">
 		<form action="<?php echo submit_action($sp);?>" method="POST">

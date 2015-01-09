@@ -1,0 +1,5 @@
+*{ margin:0; padding:0}
+body{ font-family:"微软雅黑",Verdana, Geneva, sans-serif; font-size:12px; background:#fff}
+.title_bar{ height:76px; line-height:90px; background:url(../img/top.png) repeat-x; border-bottom:1px solid #e5ecf0; overflow:hidden;}
+a{ outline:none}
+.header{ width:964px; margin:0 auto;}
