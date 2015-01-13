@@ -46,5 +46,16 @@
 		$addition_items[$sp] = str_replace("#domain#", $alias, $addition_items[$sp]);
 		
 		return $addition_items[$sp];
-	}	
+	}
+
+	function get_bgimgs($dir){
+		$bgdir = dir($dir);
+		$bgarr = array();
+		while($bgimg = $bgdir->read()){
+			if($bgimg != '.' && $bgimg != '..'){
+				$bgarr[] = $dir.$bgimg;
+			}
+		}
+		return $bgarr;
+	}
 ?>

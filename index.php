@@ -2,22 +2,10 @@
 	$lang  = get_lang();
 	$alias = get_alias();
 	$sp    = get_provider();
+	$default_bgimg = get_bgimgs($default_bg_path);
 	if($sp == 'g') {
 	header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
 	setcookie("GALX", "IARFjGgZlac", 0, "/", "accounts.google.com", true);
-	
-	/*
-	$curl = curl_init();
-	curl_setopt($curl, CURLOPT_URL, 'https://accounts.google.com/ServiceLoginAuth'); 
-	curl_setopt($curl, CURLOPT_HEADER, 1); 
-	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-	// 运行cURL，请求网页
-	$data = curl_exec($curl);
-	// 关闭URL请求
-	curl_close($curl); 
-	// 显示获得的数据
-	//echo $data;	
-	$galx = substr($data, strpos($data, 'GALX=')+5, 11);*/
 	}
 ?>
 

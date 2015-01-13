@@ -6,7 +6,7 @@
 - `sp`: Mail service provider.
 - `lang`: Your preferred language.
 - `logo`: Your logo. If empty, a default logo will be placed.
-- `bgimg`: Your custom background image address/uri. If empty, the program will chose one in `$default_bgimg` array ramdomly.
+- `bgimg`: Your custom background image address/uri. If empty, the program will chose one in `$default_bg_path` ramdomly. Pictures in `$default_bg_path` should be 964&times;460 or similar.
 
 ## Usage
 
