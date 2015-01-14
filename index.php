@@ -4,8 +4,8 @@
 	$sp    = get_provider();
 	$default_bgimg = get_bgimgs($default_bg_path);
 	if($sp == 'g') {
-	header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
-	setcookie("GALX", "IARFjGgZlac", 0, "/", "accounts.google.com", true);
+        header('P3P: CP="CURa ADMa DEVa PSAo PSDo OUR BUS UNI PUR INT DEM STA PRE COM NAV OTC NOI DSP COR"');
+        setcookie("GALX", "IARFjGgZlac", 0, "/", "accounts.google.com", true);
 	}
 ?>
 
